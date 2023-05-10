@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 :root {
@@ -15,7 +15,7 @@ body {
 }
 
 .header,
-.presentation, 
+.presentation,
 .about-us,
 .services,
 .bottom-slogan,
@@ -32,7 +32,7 @@ body {
     margin-top: 80px;
 }
 
-/* Header ------------------------------------*/ 
+/* Header ------------------------------------*/
 
 .header {
     margin-top: 30px;
@@ -48,6 +48,7 @@ body {
 .header__cta {
     text-decoration: none;
     border: 2px solid var(--primary-color);
+    color: var(--primary-color);
     width: 130px;
     height: 32px;
     font-size: 11px;
@@ -57,7 +58,7 @@ body {
     border-radius: 5px;
 }
 
-/* Presentation ------------------------------------*/ 
+/* Presentation ------------------------------------*/
 
 .presentation {
     display: flex;
@@ -81,8 +82,9 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+
 .presentation__description-conteiner {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -250,4 +252,212 @@ body {
     font-size: 14px;
     color: var(--gray-200);
     margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+
+    /* Presentation ------------------------------------*/
+
+    .presentation {
+        flex-direction: row;
+    }
+
+    .presentation__description-conteiner {
+        align-items: flex-start;
+        margin-right: 72px;
+    }
+
+    .presentation__title {
+        text-align: left;
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .presentation__text {
+        text-align: left;
+    }
+
+    .presentation__image {
+        margin-top: 0;
+    }
+
+    /* About-us ------------------------------------*/
+
+    .about-us {
+        flex-direction: row;
+    }
+
+    .about-us__descreption-conteiner {
+        margin-right: 90px;
+    }
+
+    .about-us__tag {
+        text-align: left;
+    }
+
+    .about-us__title {
+        text-align: left;
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .about-us__text {
+        text-align: left;
+    }
+
+    .about-us__image {
+        margin-top: 0;
+    }
+
+    /* Services ------------------------------------*/
+
+    .services__title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .services__items-conteiner {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .services-item {
+        width: 100%;
+    }
+
+    /* Bottom-slogan ------------------------------------*/
+
+    .bottom-slogan-conteiner {
+        padding: 0;
+    }
+
+    .bottom-slogan {
+        flex-direction: row;
+    }
+
+    .bottom-slogan__text {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .bottom-slogan__image {
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    /* Geral ------------------------------------*/
+
+    .about-us,
+    .services,
+    .bottom-slogan-conteiner,
+    .footer {
+        margin-top: 150px;
+    }
+
+    /*header ------------------------------------*/
+
+    .header__logo {
+        width: 181px;
+    }
+
+    .header__cta {
+        width: 183px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    /* presentation ------------------------------------*/
+
+    .presentation__image {
+        max-width: 420px;
+    }
+
+    /* About-us ------------------------------------*/
+
+    .about-us__image {
+        max-width: 400px;
+    }
+
+    /* Bottom-slogan ------------------------------------*/
+
+    .bottom-slogan__image {
+        max-width: 431px;
+    }
+
+    @media (min-width: 1200px) {
+        /* presentation ------------------------------------*/
+
+        .presentation__title {
+            font-size: 36px;
+            line-height: 55px;
+        }
+
+        .presentation__text {
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        .presentation__image {
+            max-width: 620px;
+        }
+
+        /* About-us ------------------------------------*/
+
+        .about-us__tag {
+            font-size: 24px;
+        }
+
+        .about-us__title {
+            font-size: 36px;
+            line-height: 55px;
+        }
+
+        .about-us__text {
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        .about-us__image {
+            max-width: 558px;
+        }
+
+        /* Services ------------------------------------*/
+
+        .services__tag {
+            font-size: 24px;
+        }
+        
+        .services__title {
+            font-size: 36px;
+            line-height: 55px;
+        }
+
+        .services__image-item {
+            width: 100px;
+        }
+
+        /* Bottom-slogan ------------------------------------*/
+
+        .bottom-slogan__description-conteiner {
+            margin-right: 72px;
+        }
+
+        .bottom-slogan__tag {
+            font-size: 24px;
+        }
+        
+        .bottom-slogan__text {
+            font-size: 36px;
+            line-height: 55px;
+        }
+
+        /* Footer ------------------------------------*/
+
+        .footer__text {
+            font-size: 16px;
+        }
+        
+    }
 }
